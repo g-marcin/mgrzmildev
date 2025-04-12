@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <meta name="google-signin-client_id" content="901575748186-lv6f3okm09ti8e42i75t5geijaaj75ro.apps.googleusercontent.com">
+    <script>
+      (function(d, s, id){
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) {return;}
+          js = d.createElement(s); js.id = id;
+          js.src = "https://connect.facebook.net/en_US/sdk.js";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk')
+      );
+    </script>
+</head>
+<body>
+    <h1>Oauth-exercise</h1>
+    <br>
+    <h2>Add Facebook Login to your webpage</h2>
+  
+    <p id="profile"></p>
+
+    <script>
+      window.fbAsyncInit = function() {
+          
+          FB.init({
+                    appId            : '9443932132316427',
+                    xfbml            : true,
+                    version          : 'v22.0'
+                  });
+          console.log('init')
+        FB.login(function(response) {
+           console.log('hello')
+
+    if (response.authResponse) {
+     console.log('Welcome!  Fetching your information.... ');
+     FB.api('/me', function(response) {
+       console.log('Good to see you, ' + response.name + '.');
+     });
+    } else {
+     console.log('User cancelled login or did not fully authorize.');
+    }
+});
+          
+      };
+
+      document.addEventListener('DOMContentLoaded', function() {
+          //fbk
+          <h1>this is new line</h1>
+          const buttonLogout = document.querySelector('.button-logout');
+          buttonLogout.addEventListener('click', () => {
+              FB.logout(function(response) {
+                  console.log('logged out');
+                  document.getElementById("profile").innerHTML = "You have logged out.";
+              });
+          });
+          //ggle
+          gapi.load('auth2', function() {
+              gapi.auth2.init({
+                  client_id: '901575748186-lv6f3okm09ti8e42i75t5geijaaj75ro.apps.googleusercontent.com'
+              });
+          });
+      });
+
+      //ggle
+      function onSignIn(googleUser) {
+          var profile = googleUser.getBasicProfile();
+          document.getElementById("profile").innerHTML = "Good to see you, " + profile.getName() + ". I see your email address is " + profile.getEmail();
+      }
+      //ggle
+      function signOut() {
+          var auth2 = gapi.auth2.getAuthInstance();
+          auth2.signOut().then(function () {
+              console.log('User signed out.');
+              document.getElementById("profile").innerHTML = "You have logged out.";
+          });
+      }    
+    </script>
+
+    <h2>Facebook</h2>
+<div class="fb-login-button" data-width="200" data-size="" data-button-type="" data-layout="" data-auto-logout-link="true" data-use-continue-as="false"></div>
+<button class="button-logout">FB LOG OUT</button>
+
+<h2>Google2</h2>
+  <div class="g-signin2" data-onsuccess="onSignIn"></div>
+  <button class="button-logout" onclick="signOut();">Google LOG OUT</button>
+
+<h3>hello from sublime SFTP connection</h3>
+  <p>i established sftp connection with mikrus from sublime-text-editor</p> 
+</body>
+</html>
