@@ -3,68 +3,191 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>mgrzmil.dev</title>
-    <link rel="stylesheet" href="style.css?version=1.92"></link>
-    <link rel="stylesheet" href="poppins.css?version=1.6"></link>
-
+    <title>mgrzmil.dev | JavaScript Developer</title>
+    <meta name="description" content="Marcin Grzmil - JavaScript Developer Portfolio">
+    <link rel="stylesheet" href="style.css?version=1.93">
+    <link rel="stylesheet" href="poppins.css?version=1.6">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
- <link rel="stylesheet" type="text/css" href="//necolas.github.io/normalize.css/8.0.1/normalize.css" />
- <!--eruda-->
- <script src="https://cdn.jsdelivr.net/npm/eruda"></script>
-<script>eruda.init();console.log("eruda-is-active!")</script>
+    <link rel="stylesheet" type="text/css" href="//necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!--eruda-->
 </head>
 <body>
-    <div class="head-banner">
-        <a href="https://mgrzmil.dev" style="text-decoration: none; color: #fff;">mgrzmil.dev</a>
-    </div>
+    <header class="head-banner">
+        <nav>
+            <a href="https://mgrzmil.dev" class="logo">mgrzmil.dev</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="/blog">Blog</a></li>
+                <li><a href="/cv-html/">CV</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <div class="main-wrapper">
         <aside class="desktop">
-            <img src="/assets/mgrzmil.jpg" width="350px" height="450px"></img>
+            <img src="/assets/mgrzmil.jpg" alt="Marcin Grzmil" width="350" height="450">
+            <div class="social-links">
+                <a href="https://github.com/g-marcin" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/marcin-grzmil" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <!-- <a href="https://" title="Twitter"><i class="fab fa-twitter"></i></a> -->
+            </div>
         </aside>
-        <hr>
+        
         <main>
-             <p>
-         my name is Marcin Grzmil, i am javascript developer
-    </p>
-    <main>
-        <p>
-            this is my cv <a href="/cv-html/">cv-html</a>
-        </p>
-            and these are my projects
-        <ul>
-            <li><a href="/shop-cart/">shop-cart</a></li>
-            <li><a href="/freelancer-website/">freelancer-website</a></li>
-            <li><a href="/mars-rover-photos/">mars-rover-photos</a></li>
-            <li><a href="/woof-app/">woof-app</a></li>
-            <li><a href="/angular-exchange/">angular-exchange</a></li>
-            <li><a href="/insurance-form/">insurance-form</a></li>
-            <li><a href="/react-quiz/">react-quiz</a></li>
-            <li><a href="/react-dashboard/">react-dashboard</a></li>
-            <li><a href="/js-my-wordle/">my-wordle</a></li>
-            <li><a href="/SunnyVibes/">sunny-vibes</a></li>
-            <li><a href="/js-calculator/">js-calculator</a></li>
-            <li><a href="/react-todo-app-2.0/">react-todo-app-2.0</a></li>
+            <section id="about" class="section">
+                <h1>Marcin Grzmil</h1>
+                <h2>JavaScript Developer</h2>
+                <p class="bio">
+                    Hi there! I'm a JavaScript developer passionate about creating efficient and user-friendly web applications.
+                    Check out my <a href="/cv-html/" class="highlight-link">CV</a> to learn more about my experience.
+                </p>
+            </section>
 
-
-        </ul>
-        <p>please check out my blog!: </p><a href="/blog">mgrzmil.dev-blog</a>
-        <p>books which helped me along the way <a href="./books/">books</a></p>
-
-        <p>aint much but its an honest work</p>
-
+            <section id="projects" class="section">
+                <h2>My Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <h3>Shop Cart</h3>
+                        <p>E-commerce shopping cart implementation</p>
+                        <div class="tech-stack">
+                            <span>JavaScript</span>
+                            <span>React</span>
+                        </div>
+                        <a href="/shop-cart/" class="project-link"><i class="fas fa-external-link-alt"></i> View Project</a>
+                    </div>
+                    
+                    <div class="project-card">
+                        <h3>Freelancer Website</h3>
+                        <p>Portfolio template for freelancers</p>
+                        <div class="tech-stack">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                        </div>
+                        <a href="/freelancer-website/" class="project-link"><i class="fas fa-external-link-alt"></i> View Project</a>
+                    </div>
+                    
+                    <div class="project-card">
+                        <h3>Mars Rover Photos</h3>
+                        <p>NASA API integration project</p>
+                        <div class="tech-stack">
+                            <span>JavaScript</span>
+                            <span>Angular</span>
+                        </div>
+                        <a href="/mars-rover-photos/" class="project-link"><i class="fas fa-external-link-alt"></i> View Project</a>
+                    </div>
+                    
+                    <div class="project-card">
+                        <h3>Woof App</h3>
+                        <p>Dog adoption platform</p>
+                        <div class="tech-stack">
+                            <span>React</span>
+                            <span>CSS</span>
+                        </div>
+                        <a href="/woof-app/" class="project-link"><i class="fas fa-external-link-alt"></i> View Project</a>
+                    </div>
+                    
+                    <div class="project-card">
+                        <h3>Angular Exchange</h3>
+                        <p>Currency exchange application</p>
+                        <div class="tech-stack">
+                            <span>Angular</span>
+                            <span>TypeScript</span>
+                        </div>
+                        <a href="/angular-exchange/" class="project-link"><i class="fas fa-external-link-alt"></i> View Project</a>
+                    </div>
+                    
+                    <div class="project-card">
+                        <h3>React Quiz</h3>
+                        <p>Interactive quiz application</p>
+                        <div class="tech-stack">
+                            <span>React</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <a href="/react-quiz/" class="project-link"><i class="fas fa-external-link-alt"></i> View Project</a>
+                    </div>
+                    
+                    <div class="view-all">
+                        <a href="#all-projects" class="btn">View All Projects <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div id="all-projects" class="additional-projects">
+                    <h3>All Projects</h3>
+                    <ul class="project-list">
+                        <li><a href="/shop-cart/"><i class="fas fa-shopping-cart"></i> Shop Cart</a></li>
+                        <li><a href="/freelancer-website/"><i class="fas fa-laptop-code"></i> Freelancer Website</a></li>
+                        <li><a href="/mars-rover-photos/"><i class="fas fa-rocket"></i> Mars Rover Photos</a></li>
+                        <li><a href="/woof-app/"><i class="fas fa-dog"></i> Woof App</a></li>
+                        <li><a href="/angular-exchange/"><i class="fas fa-exchange-alt"></i> Angular Exchange</a></li>
+                        <li><a href="/insurance-form/"><i class="fas fa-file-alt"></i> Insurance Form</a></li>
+                        <li><a href="/react-quiz/"><i class="fas fa-question-circle"></i> React Quiz</a></li>
+                        <li><a href="/react-dashboard/"><i class="fas fa-chart-line"></i> React Dashboard</a></li>
+                        <li><a href="/js-my-wordle/"><i class="fas fa-font"></i> My Wordle</a></li>
+                        <li><a href="/SunnyVibes/"><i class="fas fa-sun"></i> Sunny Vibes</a></li>
+                        <li><a href="/js-calculator/"><i class="fas fa-calculator"></i> JS Calculator</a></li>
+                        <li><a href="/react-todo-app-2.0/"><i class="fas fa-tasks"></i> React Todo App 2.0</a></li>
+                    </ul>
+                </div>
+                
+                <div class="additional-links">
+                    <p>Please check out my <a href="/blog" class="highlight-link">blog</a>!</p>
+                    <p>Books which helped me along the way: <a href="./books/" class="highlight-link">Reading List</a></p>
+                </div>
+                
+                <div class="quote">
+                    <p>"Ain't much but it's honest work"</p>
+                </div>
+            </section>
         </main>
     </div> 
-<footer class="flex-column">
-    <div class="half">
-            <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 1440 220">
-  <path fill="#ffa652" fill-opacity="1" d="M0,160L1440,32L1440,320L0,320Z"></path>
-</svg>
-    </div>
-    <div class="half">
-
-    </div>
-</footer>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Contact Me</h3>
+                <p><i class="fas fa-envelope"></i> mgrzmil4@gmail.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> Lublin, Poland</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="/cv-html/">CV</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Marcin Grzmil. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <button id="back-to-top" title="Back to Top"><i class="fas fa-arrow-up"></i></button>
+    
+    <script>
+        // Back to top button functionality
+        const backToTopButton = document.getElementById("back-to-top");
+        
+        window.addEventListener("scroll", () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.style.display = "block";
+            } else {
+                backToTopButton.style.display = "none";
+            }
+        });
+        
+        backToTopButton.addEventListener("click", () => {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+    </script>
 </body>
 </html>
