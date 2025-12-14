@@ -1,0 +1,16 @@
+<FilesMatch "^\.git">
+    Require all denied
+</FilesMatch>
+
+<DirectoryMatch "^\.git">
+    Require all denied
+</DirectoryMatch>
+
+RewriteEngine On
+RewriteRule ^\.git - [F,L]
+
+<FilesMatch "^\.">
+    Require all denied
+</FilesMatch>
+
+

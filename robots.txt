@@ -1,0 +1,11 @@
+User-agent: *
+Disallow: /.git/
+Disallow: /.git
+Disallow: /node_modules/
+Disallow: /*.log
+Disallow: /package.json
+Disallow: /package-lock.json
+Disallow: /.env
+Disallow: /.htaccess
+
+
