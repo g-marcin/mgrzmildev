@@ -238,7 +238,7 @@ h3 {
 
 .btn:hover {
     background-color: var(--secondary-color);
-    transform: translateY(-3px);
+    /* transform: translateY(-3px); */
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
@@ -359,7 +359,7 @@ footer {
 
 #back-to-top:hover {
     background-color: var(--secondary-color);
-    transform: translateY(-3px);
+    /* transform: translateY(-3px); */
 }
 
 /* Responsive design */
