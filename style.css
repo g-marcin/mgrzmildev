@@ -187,6 +187,8 @@ h3 {
     transition: var(--transition);
     border-left: 4px solid var(--primary-color);
     min-height: 234px;
+    display: flex;
+    flex-direction: column;
 }
 
 .project-card:hover {
@@ -426,5 +428,57 @@ svg {
 .project-link-container {
     display: flex;
     flex-direction: row-reverse;
+    margin-top: auto;
+}
+
+.project-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: auto;
+    justify-content: flex-end;
+}
+
+.project-links .project-link {
+    margin-top: 0;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.tech-highlights {
+    margin-top: 1.5rem;
+}
+
+.tech-category {
+    margin-bottom: 1rem;
+}
+
+.tech-category h4 {
+    font-size: 0.9rem;
+    color: var(--secondary-color);
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tech-tags span {
+    background-color: var(--light-gray);
+    padding: 0.35rem 0.85rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+}
+
+.project-card.featured {
+    border-left: 4px solid var(--primary-color);
 }
 

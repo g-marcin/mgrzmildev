@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
-        mgrzmil.dev | Full Stack Developer
+        mgrzmil.dev | Front-End Developer
     </title>
-    <meta name="description" content="Marcin Grzmil - full stack developer portfolio">
+    <meta name="description" content="Marcin Grzmil - Front-End Developer with Full-Stack Experience">
     <!-- normalize-css -->
     <link rel="stylesheet" type="text/css" href="//necolas.github.io/normalize.css/8.0.1/normalize.css">
     <!-- main css -->
@@ -54,68 +54,115 @@
         <main>
             <section id="about" class="section">
                 <h1>Marcin Grzmil</h1>
+                <p class="subtitle">Front-End Developer | Full-Stack Experience</p>
                 <p class="bio">
-                    Im a fullstack developer passionate about studying and imporving real world systems. My goal is to bring actual bussines value to the team and the product.               
+                    Specialized in React, Next.js and TypeScript with 2+ years of e-commerce experience. Expanding into full-stack with Node.js, Bun, and PostgreSQL.
                 </p>
            
-                <div class="bio" style="max-width: 90%; transform: translateX(1.5rem)">
-                    <ul >
-                        <li>focused on frontend and product</li>
-                        <li>discovering the bussines requirements and finding out the best fitting solutions to fullfil them using avalable tools and technologies.</li>
-                        <li>learning about current domain and bussines domains in general</li>
-                        <li>not afraid to work with legacy codebases</li>
-                        <li>eager to learn and experiment with new technologies</li>
-                        <li>making data driven decisions to improve the product and the workflow.</li>
-                    </ul>  
+                <div class="tech-highlights">
+                    <div class="tech-category">
+                        <h4>Languages</h4>
+                        <div class="tech-tags">
+                            <span>JavaScript (ES6+)</span>
+                            <span>TypeScript</span>
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>SASS/SCSS</span>
+                        </div>
+                    </div>
+                    <div class="tech-category">
+                        <h4>Frameworks</h4>
+                        <div class="tech-tags">
+                            <span>React</span>
+                            <span>Next.js</span>
+                            <span>Redux</span>
+                            <span>MobX</span>
+                            <span>Express</span>
+                            <span>Hono</span>
+                        </div>
+                    </div>
+                    <div class="tech-category">
+                        <h4>Backend</h4>
+                        <div class="tech-tags">
+                            <span>Node.js</span>
+                            <span>Bun</span>
+                            <span>REST APIs</span>
+                            <span>SSE</span>
+                            <span>PostgreSQL</span>
+                            <span>Redis</span>
+                            <span>Drizzle ORM</span>
+                        </div>
+                    </div>
+                    <div class="tech-category">
+                        <h4>Tools</h4>
+                        <div class="tech-tags">
+                            <span>Git</span>
+                            <span>GitLab CI/CD</span>
+                            <span>Docker</span>
+                            <span>Webpack</span>
+                            <span>Linux/Bash</span>
+                        </div>
+                    </div>
+                    <div class="tech-category">
+                        <h4>Testing & Monitoring</h4>
+                        <div class="tech-tags">
+                            <span>Jest</span>
+                            <span>Puppeteer</span>
+                            <span>Kibana</span>
+                            <span>Grafana</span>
+                            <span>Jaeger</span>
+                        </div>
+                    </div>
                 </div>         
             </section>
 
             <section id="projects" class="section">
                 <h2>Projects</h2>
                 <div class="projects-grid">
-                    <div class="project-card">
-                        <h3>Woof App</h3>
-                        <p>pet project to practice react</p>
+                    <div class="project-card featured">
+                        <h3>Woof App + Infrastructure</h3>
+                        <p>Full-stack project with custom REST API and CDN. App on Firebase, API and CDN self-hosted on VPS with nginx, pm2.</p>
                         <div class="tech-stack">
                             <span>React</span>
-                            <span>css-modules</span>
+                            <span>REST API</span>
+                            <span>nginx</span>
+                            <span>VPS</span>
                         </div>
-                        <div class="project-link-container">
-                            <a href="https://woof-app-ff670.web.app" class="project-link"><i
-                                    class="fas fa-external-link-alt"></i> View
-                                Project
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <h3>Shop Cart</h3>
-                        <p>pet project to practice javascript</p>
-                        <div class="tech-stack">
-                            <span>JavaScript</span>
-                        </div>
-                        <div class="project-link-container">
-                            <a href="/shop-cart/" class="project-link"><i class="fas fa-external-link-alt"></i> View
-                                Project</a>
+                        <div class="project-links">
+                            <a href="https://woof-app-ff670.web.app" class="project-link"><i class="fas fa-external-link-alt"></i> App</a>
+                            <a href="https://mgrzmil.dev/dog-api/docs" class="project-link"><i class="fas fa-book"></i> API Docs</a>
+                            <a href="https://cdn.mgrzmil.dev/docs" class="project-link"><i class="fas fa-server"></i> CDN</a>
                         </div>
                     </div>
                     <div class="project-card">
-                        <h3>Freelancer Website</h3>
-                        <p>pet project to practice page layouts</p>
+                        <h3>Portfolio Website</h3>
+                        <p>Self-hosted on private VPS with Cloudflare domain.</p>
                         <div class="tech-stack">
                             <span>HTML</span>
                             <span>CSS</span>
+                            <span>VPS</span>
                         </div>
                         <div class="project-link-container">
-                            <a href="/freelancer-website/" class="project-link"><i class="fas fa-external-link-alt"></i>
-                                View Project</a>
+                            <a href="https://mgrzmil.dev" class="project-link"><i class="fas fa-external-link-alt"></i> View Site</a>
                         </div>
                     </div>
                     <div class="project-card">
-                        <h3>Mars Rover Photos</h3>
-                        <p>pet project to practice angular, rxjs and nasa REST api integration</p>
+                        <h3>Technical Blog</h3>
+                        <p>Writing about clean code, refactoring, state management, and software design.</p>
                         <div class="tech-stack">
-                            <span>JavaScript</span>
+                            <span>Writing</span>
+                        </div>
+                        <div class="project-link-container">
+                            <a href="https://g-marcin.blogspot.com" class="project-link"><i class="fas fa-external-link-alt"></i>
+                                Read Blog</a>
+                        </div>
+                    </div>
+                    <!-- <div class="project-card">
+                        <h3>Mars Rover Photos</h3>
+                        <p>Angular app with RxJS and NASA REST API integration.</p>
+                        <div class="tech-stack">
                             <span>Angular</span>
+                            <span>RxJS</span>
                         </div>
                         <div class="project-link-container">
                                 <a href="/mars-rover-photos/" class="project-link">
@@ -123,7 +170,7 @@
                                      View Project
                                 </a>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
              
             </section>
