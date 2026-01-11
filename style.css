@@ -29,6 +29,9 @@ html {
 
 /* Header */
 .head-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background: linear-gradient(23deg, rgba(252, 209, 169, 1) 0%, rgba(255, 166, 82, 1) 34%);
     padding: 1rem 2rem;
     position: sticky;
@@ -103,9 +106,6 @@ aside img {
     transition: var(--transition);
 }
 
-aside img:hover {
-    /* transform: scale(1.02); */
-}
 
 .social-links {
     display: flex;
@@ -186,6 +186,7 @@ h3 {
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
     transition: var(--transition);
     border-left: 4px solid var(--primary-color);
+    min-height: 234px;
 }
 
 .project-card:hover {
@@ -276,7 +277,7 @@ h3 {
 }
 
 .additional-links {
-    margin-top: 3rem;
+    
 }
 
 .quote {
@@ -290,8 +291,8 @@ h3 {
 footer {
     background-color: var(--secondary-color);
     color: white;
-    padding: 3rem 0 1rem;
-    margin-top: 3rem;
+    /* padding: 3rem 0 1rem; */
+    /* margin-top: 3rem; */
     position: relative;
 }
 
@@ -334,7 +335,7 @@ footer {
 .copyright {
     text-align: center;
     margin-top: 3rem;
-    padding-top: 1.5rem;
+    padding: 1.5rem;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -421,3 +422,9 @@ svg {
     height: auto;
     z-index: -1;
 }
+
+.project-link-container {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
